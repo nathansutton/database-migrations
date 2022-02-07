@@ -14,7 +14,7 @@ CREATE TABLE sqitch.hospital
   pricing_url           VARCHAR(500) NULL
 );
 
-COPY sqitch.hospital FROM '/opt/data/dim/hospital.csv' WITH CSV HEADER;
+COPY sqitch.hospital FROM '/opt/dim/hospital.csv' WITH CSV HEADER;
 
 ANALYZE sqitch.hospital;
 
