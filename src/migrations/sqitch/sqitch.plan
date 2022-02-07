@@ -1,0 +1,8 @@
+%syntax-version=1.0.0
+%project=sqitch
+
+concept 2022-02-07T20:06:23Z nate <nate@nates-air-2.lan> # add concept table
+hospital 2022-02-07T20:07:05Z nate <nate@nates-air-2.lan> # add hospital table
+price 2022-02-07T20:07:15Z nate <nate@nates-air-2.lan> # add price table
+gross 2022-02-07T20:07:35Z nate <nate@nates-air-2.lan> # add gross table
+alter_hospital 2022-02-07T20:21:32Z nate <nate@nates-air-2.lan> # add primary key to hospital table
