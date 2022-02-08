@@ -10,7 +10,7 @@ CREATE TABLE sqitch.price
   amount                FLOAT NOT NULL
 );
 
-COPY sqitch.price FROM PROGRAM 'cat /opt/data/transformed/*.csv' WITH CSV;
+COPY sqitch.price FROM PROGRAM 'cat /opt/transformed/*.csv' WITH CSV;
 
 ANALYZE sqitch.price;
 

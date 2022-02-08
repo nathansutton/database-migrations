@@ -41,3 +41,11 @@ services:
       - FLYWAY_PASSWORD=$PGPASSWORD
     volumes:
       - ./src/migrations:/flyway/migrations
+
+  liquibase:
+    container_name: liquibase
+    image: liquibase/liquibase
+    command: --url=jdbc:postgresql://postgres:5432/postgres?user=admin&password=password --changeLogFile=changelog.xml update
+    volumes:
+      - ./src/migrations/liquibase/changelog.xml:/liquibase/changelog.xml
+      - ./src/migrations/liquibase/scripts:/liquibase/scripts
