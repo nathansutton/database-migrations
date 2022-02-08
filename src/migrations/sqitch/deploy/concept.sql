@@ -16,6 +16,9 @@ CREATE TABLE sqitch.concept
   invalid_reason     VARCHAR(1) NULL
 );
 
-COPY sqitch.concept FROM PROGRAM 'gunzip -c /opt/dim/CONCEPT.csv.gz' WITH DELIMITER E'\t' CSV HEADER QUOTE E'\b' ;
+COPY sqitch.concept 
+FROM PROGRAM 'gunzip -c /opt/dim/CONCEPT.csv.gz' 
+WITH DELIMITER E'\t' CSV HEADER QUOTE E'\b' 
+;
 
 COMMIT;
